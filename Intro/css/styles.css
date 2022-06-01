@@ -1,0 +1,346 @@
+/*
+Color used
+Text color (Dark Gray): #2b2b2b;
+Primary color (purple): #35b70;
+Secondary color (orange): #e0b354;
+*/
+
+
+/* COLOR  STYLING */
+:root { 
+    --background-color:  #FDBA74; /*body */
+    --h1-color: teal; /* h1*/
+    --page-header:  #FED7AA; /* background color*/
+    --a-color:  #357b70; /* a, button(background-color) */
+
+    --a-visited-color:  #05676e; /* a:visited */
+    --a-active-color: #489c79;
+    --button-color: whitesmoke; 
+    --button-secondary-background: #e0b354; /* button secondary background color*/
+    --button-secondary-color: #2b2b2b;
+    --berlin-sun-color: #edc655; /* 0% */
+    --berlin2-sun-color: #fcffad; /* 50% */
+    --berlin3-sun-color: #f76414;
+    --grid-item-color: lightgray; /* background for the 6 projects on work page*/
+}
+/* tYPOGRAFHY STYLING */
+:root { 
+    --h1-size: 30px; /* h1 */
+    --h2-size: 24px; /* h2 */
+    --h3-size: 18px; /* h3 */
+    --body-size: 16px; /* body */ 
+    --body-font-weight: 400; /* body*/
+    --font-weight: 700; /* h1, h2, h3*/
+    --line-height: 1.6; /* body*/
+    
+}
+
+/* Here above, it is how a variable is creat on css */
+
+body {
+    font-family: 'Open+Sans', sans-serif;
+    /*This is typography, we added font from google and should alwas be at the top of the CSS file*/
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-size);
+    /* Sets the font size to 16px */
+    line-height: var(--line-height);
+    /* Sets the line-height 1.6 */
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: var(--h1-size);
+    font-weight: var(--font-weight);
+    color: var(--h1-color)
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: var(--font-weight);
+}
+
+h3 {
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight);
+}
+
+
+a {
+    color: var(--a-active-color);
+}
+
+a:visited {
+    color: var(--a-visited-color);
+    /* Visited link */
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    /* No underlining when hovering over a link */
+    /* "a:hover" must come after "a:visited" in order to be effective. */
+}
+
+a:active {
+    color: #489c79
+        /* selected link, will turn to this color when is clicked */
+        /* "a:active" must come after "a:hover" in order to work.*/
+}
+
+input,
+texture,
+select,
+button {
+    font-family: system-ui;
+}
+
+/* his means that those elements listed will use the default system font. 
+The explicit mention of these four elements holds more weight than the rule i implemented specifying Open+Sanf as my body font.*/
+
+.button, 
+button {
+    /*Defines all "buttons"general styling */
+    border: none;
+    /*overwrites browser defaults and resets the boarder*/
+    display: inline-block;
+    font-family: inherit;
+    /* takes the font from the outer container (body) */
+    background-color: var(--a-color);
+    color: var(--button-color);
+    text-decoration: none;
+    /* Styles the background color, font color, and text decoration (underline, etc) of the button */
+    padding: 10px;
+    border-radius: 3px;
+    /* adds spacing to the button*/
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    /*gives the button a bottom border with a width of 2px, a type od solid and a color in RGBA format*/
+    transition: 0.2s opacity;
+}
+
+transition: [transition-property] [transition-duration] [transition-timimg-function] [transition-delay];
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    /* let´s the  mouse appear as a hand when hovering over the button */
+    opacity: 0, 8;
+    /* Reduces the opacity of the button to 80% */
+}
+
+.button_secondary {
+    background-color: var(--button-secondary-background);
+    color: var(--button-secondary-color);
+    /* because of the cascading behavior of CSS, the sepecific changes here will overwrite those from the original styling */
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--page-header);
+}
+
+.page-header_item {
+    flex: 0 1 200px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.page-header_item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list, 
+.hobbies-list {
+    list-style-type: none;
+    /* It get rid of the dots */
+    padding: 1px;
+}
+
+.navigation-lisst_item--active {
+    text-decoration: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.profile,
+.about-text {
+    max-width: 700px;
+    /* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
+    margin: 0 auto;
+    /* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
+    align-items: center;
+}
+
+.profile_portrait {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*.profile_text {
+    ###
+}
+*/
+
+.about-text,
+.about-information,
+.work,
+.contact,
+.contact-info {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+table {
+    padding: 1px;
+    margin: 0 auto;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.redes_profile {
+    width: 30px
+}
+
+* {
+    box-sizing: border-box;
+    /* this method is recommended, the actual width of your 124px container mentioned above would change to 100px (even including the 20px padding and 4px borders).*/
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/* .sun {
+    animation: 4s color-change infinite alternate linear
+} 
+Also can be write down like this*/
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes color-change {
+    0% {
+        fill: var(--berlin-sun-color)
+    }
+    50% {
+        fill: var(--berlin2-sun-color)
+    }
+    100% {
+        fill: var(--berlin3-sun-color)
+    }
+
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+    to {
+        transform: translate(100px, 48px)
+    }
+}
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+       
+        /*grid-template-rows: 300px 300px;*/
+        /* Thankfully, CSS grid helps out here by setting a default auto value for both properties, 
+    meaning that it will automatically create as many rows or columns necessary to create a grid of the designated size.
+    It’s considered good practice to specify only one property, and this property is usually the columns property. 
+    This means the rows property defaults to auto, and that the grid should still work even if the row with the property grid-template-rows is deleted:*/
+
+        grid-gap: 20px;
+        /* This function does not work (grid-gap:) instead they recomend (gap property), but works... */
+        margin: 0;
+    }
+
+    .grid_item {
+        background-color: var(--grid-item-color);
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 10px;
+        border-radius: 5%;
+    }
+
+    .grid_item:last-child {
+        grid-column: 3 / 3;
+        grid-row: 1 / 2;   
+    }
+}
+/* The @supports CSS at-rule lets you specify declarations that depend on a browser's 
+support for one or more specific CSS features. This is called a feature query. */
+
+
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+
+    .grid_item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
