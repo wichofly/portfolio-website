@@ -117,7 +117,7 @@ button {
     transition: 0.2s opacity;
 }
 
-transition: [transition-property] [transition-duration] [transition-timimg-function] [transition-delay];
+/*transition: [transition-property] [transition-duration] [transition-timimg-function] [transition-delay];*/
 
 button:hover,
 button:focus,
