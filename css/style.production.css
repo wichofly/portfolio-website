@@ -16,7 +16,7 @@ body {
     /* Sets the font size to 16px */
     line-height: 1.6;
     /* Sets the line-height 1.6 */
-    background-color: #FDBA74;
+    background-color: #fdba74;
 }
 
 h1 {
@@ -42,7 +42,7 @@ p, ul, .contact-info {
 
 
 a {
-    color: #489c79;
+    color: #446A46; /* I changed the color, recommended by totaly "the sun glasses" */
 }
 
 a:visited {
@@ -58,9 +58,13 @@ a:focus {
 }
 
 a:active {
-    color: #489c79
+    color: #446A46
         /* selected link, will turn to this color when is clicked */
         /* "a:active" must come after "a:hover" in order to work.*/
+}
+
+#my-link {
+    color: #2d5e30;
 }
 
 input,
@@ -116,8 +120,8 @@ button {
 }
 
 #cv-button {
-    background-color: #557C55;
-    color: whitesmoke;
+    background-color: #557c55;
+    color: #f9f9f9;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -161,7 +165,7 @@ button:focus,
     display: flex;
     width: 100%;
     padding: 20px;
-    background-color: #FED7AA;
+    background-color: #fed7aa;
 }
 
 .page-header_item {
@@ -228,6 +232,10 @@ button:focus,
 .contact,
 .contact-info {
     text-align: center;
+}
+
+.contact-info a {
+    color: #2d5e30;
 }
 
 form {
@@ -416,12 +424,16 @@ Also can be write down like this*/
     }
 
     .grid_item {
-        background-color: lightgray;
+        background-color: #d3d3d3;
         width: auto;
         min-height: auto;
         margin: 0;
         padding: 10px;
         border-radius: 5%;
+    }
+
+    .grid a {
+        color: #3b653d;
     }
 
     .grid_item:last-child {
