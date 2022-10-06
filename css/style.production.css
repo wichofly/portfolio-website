@@ -1,141 +1,160 @@
-
-:root { /*body */ /* h1*/ /* background color*/ /* a, button(background-color) */ /* a:visited */ /* button secondary background color*/ /* 0% */ /* 50% */ /* background for the 6 projects on work page*/
+:root {
+  /*body */
+  /* h1*/
+  /* background color*/
+  /* a, button(background-color) */
+  /* a:visited */
+  /* button secondary background color*/
+  /* 0% */
+  /* 50% */
+  /* background for the 6 projects on work page*/
 }
 
 /* tYPOGRAFHY STYLING */
-:root { /* h1 */ /* h2 */ /* h3 */ /* body */ /* body*/ /* h1, h2, h3*/ /* body*/
+:root {
+  /* h1 */
+  /* h2 */
+  /* h3 */
+  /* body */
+  /* body*/
+  /* h1, h2, h3*/
+  /* body*/
 }
 
 /* Here above, it is how a variable is creat on css */
 
 body {
-    font-family: 'Open+Sans', sans-serif;
-    /*This is typography, we added font from google and should alwas be at the top of the CSS file*/
-    font-weight: 400;
-    font-size: 16px;
-    /* Sets the font size to 16px */
-    line-height: 1.6;
-    /* Sets the line-height 1.6 */
-    background-color: #fdba74;
+  font-family: 'Open+Sans', sans-serif;
+  /*This is typography, we added font from google and should alwas be at the top of the CSS file*/
+  font-weight: 400;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height 1.6 */
+  background-color: #fdba74;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #2b2b2b
+  font-size: 30px;
+  font-weight: 700;
+  color: #2b2b2b
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #2b2b2b;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b2b2b;
 }
 
 h3 {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-p, ul, .contact-info {
-    color: #383838;
+p,
+ul,
+.contact-info {
+  color: #383838;
 }
 
 
 a {
-    color: #446A46; /* I changed the color, recommended by totaly "the sun glasses" */
+  color: #446A46;
+  /* I changed the color, recommended by totaly "the sun glasses" */
 }
 
 a:visited {
-    color: #05676e;
-    /* Visited link */
+  color: #05676e;
+  /* Visited link */
 }
 
 a:hover,
 a:focus {
-    text-decoration: none;
-    /* No underlining when hovering over a link */
-    /* "a:hover" must come after "a:visited" in order to be effective. */
+  text-decoration: none;
+  /* No underlining when hovering over a link */
+  /* "a:hover" must come after "a:visited" in order to be effective. */
 }
 
 a:active {
-    color: #446A46
-        /* selected link, will turn to this color when is clicked */
-        /* "a:active" must come after "a:hover" in order to work.*/
+  color: #446A46
+    /* selected link, will turn to this color when is clicked */
+    /* "a:active" must come after "a:hover" in order to work.*/
 }
 
 #my-link {
-    color: #2d5e30;
+  color: #2d5e30;
 }
 
 input,
 texture,
 select,
 button {
-    font-family: system-ui;
+  font-family: system-ui;
 }
 
 /* his means that those elements listed will use the default system font. 
 The explicit mention of these four elements holds more weight than the rule i implemented specifying Open+Sanf as my body font.*/
 
 .button {
-    /*Defines all "buttons"general styling */
-    border: none;
-    /*overwrites browser defaults and resets the boarder*/
-    display: inline-block;
-    font-family: inherit;
-    /* takes the font from the outer container (body) */
-    background-color: #357b70;
-    color: whitesmoke;
-    text-decoration: none;
-    /* Styles the background color, font color, and text decoration (underline, etc) of the button */
-    padding: 10px;
-    border-radius: 3px;
-    /* adds spacing to the button*/
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    /*gives the button a bottom border with a width of 2px, a type od solid and a color in RGBA format*/
-    -webkit-transition: 0.2s opacity;
-    -o-transition: 0.2s opacity;
-    transition: 0.2s opacity;
+  /*Defines all "buttons"general styling */
+  border: none;
+  /*overwrites browser defaults and resets the boarder*/
+  display: inline-block;
+  font-family: inherit;
+  /* takes the font from the outer container (body) */
+  background-color: #357b70;
+  color: whitesmoke;
+  text-decoration: none;
+  /* Styles the background color, font color, and text decoration (underline, etc) of the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* adds spacing to the button*/
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  /*gives the button a bottom border with a width of 2px, a type od solid and a color in RGBA format*/
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 button {
-    /*Defines all "buttons"general styling */
-    border: none;
-    /*overwrites browser defaults and resets the boarder*/
-    display: inline-block;
-    font-family: inherit;
-    /* takes the font from the outer container (body) */
-    background-color: #357b70;
-    color: whitesmoke;
-    text-decoration: none;
-    /* Styles the background color, font color, and text decoration (underline, etc) of the button */
-    padding: 10px;
-    border-radius: 3px;
-    /* adds spacing to the button*/
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    /*gives the button a bottom border with a width of 2px, a type od solid and a color in RGBA format*/
-    -webkit-transition: 0.2s opacity;
-    -o-transition: 0.2s opacity;
-    transition: 0.2s opacity;
+  /*Defines all "buttons"general styling */
+  border: none;
+  /*overwrites browser defaults and resets the boarder*/
+  display: inline-block;
+  font-family: inherit;
+  /* takes the font from the outer container (body) */
+  background-color: #357b70;
+  color: whitesmoke;
+  text-decoration: none;
+  /* Styles the background color, font color, and text decoration (underline, etc) of the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* adds spacing to the button*/
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  /*gives the button a bottom border with a width of 2px, a type od solid and a color in RGBA format*/
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 #cv-button {
-    background-color: #557c55;
-    color: #f9f9f9;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    -webkit-transition: 0.3s opacity;
-    -o-transition: 0.3s opacity;
-    transition: 0.3s opacity;
+  background-color: #557c55;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
+  transition: 0.3s opacity;
 }
 
 #cv-button:hover {
-    background-color: #A6CF98;
-    color:#383838;
-    opacity: 0, 8;
+  background-color: #A6CF98;
+  color: #383838;
+  opacity: 0, 8;
 }
+
 /*-webkit-transition: [transition-property] [transition-duration] [transition-timimg-function] [transition-delay];
 
 -o-transition: [transition-property] [transition-duration] [transition-timimg-function] [transition-delay];
@@ -147,78 +166,78 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-    cursor: pointer;
-    /* let´s the  mouse appear as a hand when hovering over the button */
-    opacity: 0, 8;
-    /* Reduces the opacity of the button to 80% */
+  cursor: pointer;
+  /* let´s the  mouse appear as a hand when hovering over the button */
+  opacity: 0, 8;
+  /* Reduces the opacity of the button to 80% */
 }
 
 .button_secondary {
-    background-color: #e0b354;
-    color: #2b2b2b;
-    /* because of the cascading behavior of CSS, the sepecific changes here will overwrite those from the original styling */
+  background-color: #e0b354;
+  color: #2b2b2b;
+  /* because of the cascading behavior of CSS, the sepecific changes here will overwrite those from the original styling */
 }
 
 .page-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    background-color: #fed7aa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: #fed7aa;
 }
 
 .page-header_item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
-    height: 70px;
-    -o-object-fit: contain;
-       object-fit: contain;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+  height: 70px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .page-header_item:last-child {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align: right;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
 }
 
-.navigation-list, 
+.navigation-list,
 .hobbies-list {
-    list-style-type: none;
-    /* It get rid of the dots */
-    padding: 1px;
+  list-style-type: none;
+  /* It get rid of the dots */
+  padding: 1px;
 }
 
 .navigation-lisst_item--active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .profile,
 .about-text {
-    max-width: 700px;
-    /* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
-    margin: 0 auto;
-    /* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  max-width: 700px;
+  /* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
+  margin: 0 auto;
+  /* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .profile_portrait {
-    float: left;
-    width: 250px;
-    height: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /*.profile_text {
@@ -233,20 +252,22 @@ Here below, i added the code to place the footer at the bottom of the page
 */
 
 #page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
-  
-  #footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;            /* Footer height */
-  }
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+  /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  /* Footer height */
+}
 
 /*
 ===================================================================
@@ -259,93 +280,93 @@ Here above, i added the code to place the footer at the bottom of the page
 .work,
 .contact,
 .contact-info {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-info a {
-    color: #2d5e30;
+  color: #2d5e30;
 }
 
 form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    color: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #383838;
 }
 
 .about-information p {
-    width: 50%;
-    margin: 30px auto;
+  width: 50%;
+  margin: 30px auto;
 }
 
 table {
-    padding: 1px;
-    margin: 0 auto;
+  padding: 1px;
+  margin: 0 auto;
 }
 
-thead{
-    color: #2b2b2b;
+thead {
+  color: #2b2b2b;
 }
 
 tr {
-    color: #383838;
+  color: #383838;
 }
 
 td {
-    text-align: center;
+  text-align: center;
 }
 
 .page-footer {
-    clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .page-footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .redes_profile {
-    width: 30px
+  width: 30px
 }
 
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    /* this method is recommended, the actual width of your 124px container mentioned above would change to 100px (even including the 20px padding and 4px borders).*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* this method is recommended, the actual width of your 124px container mentioned above would change to 100px (even including the 20px padding and 4px borders).*/
 }
 
 .sun {
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-name: color-change;
-            animation-name: color-change;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-name: color-change;
+  animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 /* .sun {
@@ -354,153 +375,171 @@ main {
 Also can be write down like this*/
 
 .cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @-webkit-keyframes color-change {
-    0% {
-        fill: #edc655
-    }
-    50% {
-        fill: #fcffad
-    }
-    100% {
-        fill: #f76414
-    }
+  0% {
+    fill: #edc655
+  }
+
+  50% {
+    fill: #fcffad
+  }
+
+  100% {
+    fill: #f76414
+  }
 
 }
 
 @keyframes color-change {
-    0% {
-        fill: #edc655
-    }
-    50% {
-        fill: #fcffad
-    }
-    100% {
-        fill: #f76414
-    }
+  0% {
+    fill: #edc655
+  }
+
+  50% {
+    fill: #fcffad
+  }
+
+  100% {
+    fill: #f76414
+  }
 
 }
 
 @-webkit-keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-    }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-    }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
 }
 
 @-webkit-keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-    }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px)
-    }
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px)
+  }
 }
 
 @keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-    }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px)
-    }
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px)
+  }
 }
 
 @supports (display: grid) {
-    .grid {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-       
-        /*grid-template-rows: 300px 300px;*/
-        /* Thankfully, CSS grid helps out here by setting a default auto value for both properties, 
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+
+    /*grid-template-rows: 300px 300px;*/
+    /* Thankfully, CSS grid helps out here by setting a default auto value for both properties, 
     meaning that it will automatically create as many rows or columns necessary to create a grid of the designated size.
     It’s considered good practice to specify only one property, and this property is usually the columns property. 
     This means the rows property defaults to auto, and that the grid should still work even if the row with the property grid-template-rows is deleted:*/
 
-        grid-gap: 20px;
-        /* This function does not work (grid-gap:) instead they recomend (gap property), but works... */
-        margin: 0;
-    }
+    grid-gap: 20px;
+    /* This function does not work (grid-gap:) instead they recomend (gap property), but works... */
+    margin: 0 auto;
+    max-width: 1100px;
+  }
 
-    .grid_item {
-        background-color: #d3d3d3;
-        width: auto;
-        min-height: auto;
-        margin: 0;
-        padding: 10px;
-        border-radius: 5%;
-    }
+  .grid_item {
+    display: grid;
+    align-content: space-between;
+    background-color: #d3d3d3;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5%;
+  }
 
-    .grid a {
-        color: #3b653d;
-    }
+  .grid_a {
+    color: #3b653d;
+    display: flex;
+    justify-content: space-around;
+  }
 
-    .grid_item:last-child {
-        -ms-grid-column: 3;
-        grid-column: 3 / 3;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 1;
-        grid-row: 1 / 2;   
-    }
+  .grid-icons {
+    font-size: 30px;
+  }
+
+  /* .grid_item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  } */
 }
+
 /* The @supports CSS at-rule lets you specify declarations that depend on a browser's 
 support for one or more specific CSS features. This is called a feature query. */
 
 
 @media all and (max-width: 500px) {
-    .grid {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media all and (max-width: 750px) {
-    .grid {
-        grid-gap: 10px;
-    }
+  .grid {
+    grid-gap: 10px;
+  }
 
-    .grid_item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
+  .grid_item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
 
-    h1 {
-        font-size: 22px;
-    }
+  h1 {
+    font-size: 22px;
+  }
 }

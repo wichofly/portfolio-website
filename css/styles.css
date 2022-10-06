@@ -17,7 +17,6 @@ Secondary color (orange): #e0b354;
   --a-color: #357b70;
   /* a, button(background-color) */
 
-<<<<<<< HEAD:Intro/css/styles.css
   --a-visited-color: #05676e;
   /* a:visited */
   --a-active-color: #489c79;
@@ -32,18 +31,6 @@ Secondary color (orange): #e0b354;
   --berlin3-sun-color: #f76414;
   --grid-item-color: lightgray;
   /* background for the 6 projects on work page*/
-=======
-
-    --a-visited-color:  #05676e; /* a:visited */
-    --a-active-color: #489c79;
-    --button-color: whitesmoke; 
-    --button-secondary-background: #e0b354; /* button secondary background color*/
-    --button-secondary-color: #2b2b2b;
-    --berlin-sun-color: #edc655; /* 0% */
-    --berlin2-sun-color: #fcffad; /* 50% */
-    --berlin3-sun-color: #f76414;
-    --grid-item-color: lightgray; /* background for the 6 projects on work page*/
->>>>>>> gh-pages:css/styles.css
 }
 
 /* tYPOGRAFHY STYLING */
@@ -321,7 +308,7 @@ Also can be write down like this*/
 @supports (display: grid) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr) ;
 
     /*grid-template-rows: 300px 300px;*/
     /* Thankfully, CSS grid helps out here by setting a default auto value for both properties, 
@@ -348,10 +335,10 @@ Also can be write down like this*/
     align-items: center;
   }
 
-  .grid_item:last-child {
+  /* .grid_item:last-child {
     grid-column: 3 / 3;
     grid-row: 1 / 2;
-  }
+  } */
 
   .grid-img {
     width: 250px;
