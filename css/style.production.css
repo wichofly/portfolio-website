@@ -257,15 +257,7 @@ Here below, i added the code to place the footer at the bottom of the page
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;
-  /* Footer height */
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
+  padding-bottom: 2.0rem;
   /* Footer height */
 }
 
@@ -307,21 +299,29 @@ form {
   margin: 30px auto;
 }
 
-table {
-  padding: 1px;
-  margin: 0 auto;
-}
-
-thead {
-  color: #2b2b2b;
-}
-
-tr {
-  color: #383838;
-}
-
-td {
+.about-skills {
   text-align: center;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.skill-items li {
+  margin: 10px;
+  color: #383838;
+  background-color: #F5F5F5;
+  opacity: 0.8;
+  border: .1rem solid #383838;
+  padding: .2rem .5rem;
+}
+
+.skill-items li:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .page-footer {
