@@ -219,15 +219,14 @@ button:focus,
   margin-left: 15px;
 }
 
-.profile,
-.about-text {
-  max-width: 700px;
-  /* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
-  margin: 0 auto;
-  /* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.profile {
+max-width: 700px;
+/* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
+margin: 0 auto;
+/* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
 }
 
 .profile_portrait {
@@ -267,36 +266,34 @@ Here above, i added the code to place the footer at the bottom of the page
 ===================================================================
 */
 
-.about-text,
-.about-information,
 .work,
-.contact,
-.contact-info {
+.contact-title {
+  text-transform: uppercase;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-title {
   text-align: center;
 }
 
-.contact-info a {
-  color: #2d5e30;
-}
-
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.about-information {
+  max-width: 700px;
+  margin: 0 auto;
   display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  color: #383838;
 }
 
-.about-information p {
-  width: 50%;
-  margin: 30px auto;
+.about-information-ttitle {
+  text-align: center;
+}
+
+.about-box{
+  max-width: 700px;
 }
 
 .about-skills {
@@ -322,6 +319,13 @@ form {
 .skill-items li:hover {
   opacity: 1;
   transition: 0.5s;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .page-footer {
@@ -490,6 +494,11 @@ Also can be write down like this*/
     margin: 0;
     padding: 10px;
     border-radius: 5%;
+    box-shadow: 0.3rem 0.3rem 0.5rem #777;
+  }
+
+  .grid-img {
+    box-shadow: 0.1rem 0.1rem 0.3rem #777;
   }
 
   .grid_a {

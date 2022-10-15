@@ -27,10 +27,10 @@
               <!-- "role=" Screen readers will read this element as a menuitem instead of link. -->
             </li>
             <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list_item">About me</a>
+              <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
             </li> <!-- This area of "<nav>", is only intended for major blocks of navigation links.-->
             <li role="presentation">
-              <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+              <a href="work.html" role="menuitem" class="navigation-list_item">Projects</a>
             </li>
             <li role="presentation">
               <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
@@ -39,42 +39,16 @@
         </nav>
       </header>
 
-      <div>
-        <h1 class="contact">Contact</h1>
-      </div>
-      <div class="contact-info">
-        Fraunbräu Strße 14 <br>
-        81514 München<br>
-        Deutschland<br>
-        <br>
-        Tel <a href="tel:+493044882022">+49 30 4488 2022</a><br>
-        <!-- Create a link for phone number we need "tel:"-->
-        Skype <a href="skype:antonierazo13@hotmail.com">antonierazo13@hotmail.com</a><br>
-        <!-- Create a link for skype we need "skype:"-->
-        E-mail <a href="mailto:antonierazo13@hotmail.com">antonierazo13@hotmail.com</a>
-        <!-- add the mailto: You want the browser to automatically open the user’s default email program when they click on the link.-->
-      </div><br>
-      <form action="#" method="post" id="contact-form">
-        <!-- "action" specify where the data shoul be sent when the form is submitted-->
-        <!-- Corresponds to the HTTP POST method ; form data are included in the body of the form and sent to the server.-->
-        <label class="standard-label" for="name">Name</label>
-        <input type="text" id="name">
-        <br>
-        <label class="standard-label" for="contact-email">Email:</label>
-        <input type="email" id="contact-email" required>
-        <!-- "for" and "id" should be exactly the same name in this case (contact-email) in order to be connected when we clikc on "Email"-->
-        <br>
-        <label class="standard-label" for="telephone">Telephone:</label>
-        <input type="tel" id="telephone">
-        <br>
-        <h4>Send me a message!</h4>
-        <!--<label class="standard-label" for="message">Message:</label>-->
-        <textarea maxlength="240" id="message" required></textarea><br>
-        <input type="submit" value="Send message">
-        <!--"label": is a text that is associatated to a control with which a user can interact-->
-        <!--"class": is used to group together multiple HTML tags, works to sepecify the tags with Javascript-->
-        <!--"id: only can be used for one specific element on a page"-->
-      </form>
+      <section>
+        <div class="contact-section">
+          <h1 class="contact-title">Contact me</h1>
+          <p>Feel free to contact me, I will be happy to connect with you.</p>
+          <a href="mailto:antonierazo13@gmail.com" target="_blank">
+            <img src="img/email_icon.svg" alt="" style="width: 48px">
+          </a>
+        </div>
+      </section>
+
       <footer class="page-footer" id="footer">
         <p>Find me on</p>
         <div class="social-media">
