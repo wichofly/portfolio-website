@@ -141,6 +141,7 @@ button {
   background-color: #557c55;
   color: #f9f9f9;
   text-decoration: none;
+  margin-top: 25px;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -220,13 +221,13 @@ button:focus,
 }
 
 .profile {
-max-width: 700px;
-/* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
-margin: 0 auto;
-/* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
--webkit-box-align: center;
--ms-flex-align: center;
-align-items: center;
+  max-width: 700px;
+  /* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
+  margin: 0 auto;
+  /* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .profile_portrait {
@@ -292,8 +293,18 @@ Here above, i added the code to place the footer at the bottom of the page
   text-align: center;
 }
 
-.about-box{
-  max-width: 700px;
+.about-box {
+  max-width: 800px;
+  display: flex;
+  gap: 30px;
+}
+
+.tell {
+  width: 70%;
+}
+
+.hobbies {
+  width: 50%;
 }
 
 .about-skills {
@@ -529,6 +540,28 @@ support for one or more specific CSS features. This is called a feature query. *
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tell {
+    margin: auto;
+  }
+
+  .hobbies {
+    margin: auto;
+  }
+
+  .about-information {
+    margin: 0 1rem;
+  }
+
+  .about-skills {
+    margin: 0 1rem;
+
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -550,5 +583,27 @@ support for one or more specific CSS features. This is called a feature query. *
 
   h1 {
     font-size: 22px;
+  }
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tell {
+    margin: auto;
+  }
+
+  .hobbies {
+    margin: auto;
+  }
+
+  .about-information {
+    margin: 0 1rem;
+  }
+
+  .about-skills {
+    margin: 0 1rem;
+
   }
 }
