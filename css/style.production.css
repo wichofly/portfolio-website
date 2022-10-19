@@ -245,6 +245,7 @@ button:focus,
   border-radius: 50%;
   -o-object-fit: cover;
   object-fit: cover;
+  box-shadow: 0.3rem 0.3rem 0.5rem #777;
 }
 
 /*.profile_text {
