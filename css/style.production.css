@@ -179,51 +179,58 @@ button:focus,
   /* because of the cascading behavior of CSS, the sepecific changes here will overwrite those from the original styling */
 }
 
-.page-header {
+/* .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px;
   background-color: #fed7aa;
-}
+} */
 
-.page-header_item {
+/* .page-header_item {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
   height: 70px;
   -o-object-fit: contain;
   object-fit: contain;
-}
+} */
 
-.page-header_item:last-child {
+/* .page-header_item:last-child {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: right;
-}
+} */
 
-.navigation-list,
-.hobbies-list {
-  list-style-type: none;
-  /* It get rid of the dots */
-  padding: 1px;
-}
+/* .navigation-list, */
 
-.navigation-lisst_item--active {
+/* .navigation-lisst_item--active {
   text-decoration: none;
-}
+} */
 
-.navigation-list li {
+/* .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+} */
+
+.nav-list {
+  text-transform: uppercase;
+}
+
+.item-nav {
+  opacity: 0.8;
+}
+
+.item-nav:hover {
+  opacity: 1;
 }
 
 .profile {
   max-width: 700px;
   /* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
-  margin: 0 auto;
+  margin: 2rem auto;
   /* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -254,6 +261,7 @@ Here below, i added the code to place the footer at the bottom of the page
 #page-container {
   position: relative;
   min-height: 100vh;
+  background-color: #fdba74;
 }
 
 #content-wrap {
@@ -272,21 +280,18 @@ Here above, i added the code to place the footer at the bottom of the page
   text-transform: uppercase;
 }
 
+
+
 .about-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin: 2rem auto;
 }
 
 .about-title {
   text-align: center;
-}
-
-.about-information {
-  max-width: 700px;
-  margin: 0 auto;
-  display: flex;
 }
 
 .about-information-ttitle {
@@ -294,9 +299,10 @@ Here above, i added the code to place the footer at the bottom of the page
 }
 
 .about-box {
-  max-width: 800px;
+  max-width: 850px;
   display: flex;
-  gap: 30px;
+  gap: 70px;
+  margin: 2rem auto 1rem auto;
 }
 
 .tell {
@@ -305,6 +311,23 @@ Here above, i added the code to place the footer at the bottom of the page
 
 .hobbies {
   width: 50%;
+}
+
+.hobbies-list {
+  list-style-type: none;
+  /* It get rid of the dots */
+  padding: 1px;
+}
+
+.svg-section{
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.about-information {
+  max-width: 800px;
+  margin: 2rem auto;
+  display: flex;
 }
 
 .about-skills {
@@ -316,6 +339,7 @@ Here above, i added the code to place the footer at the bottom of the page
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
+  margin: 1rem auto;
 }
 
 .skill-items li {
@@ -337,6 +361,7 @@ Here above, i added the code to place the footer at the bottom of the page
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin: 2rem auto;
 }
 
 .page-footer {
@@ -397,6 +422,10 @@ Also can be write down like this*/
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.section-project {
+margin: 2rem auto;
 }
 
 @-webkit-keyframes color-change {
@@ -492,7 +521,7 @@ Also can be write down like this*/
 
     grid-gap: 20px;
     /* This function does not work (grid-gap:) instead they recomend (gap property), but works... */
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 1100px;
   }
 
@@ -560,7 +589,6 @@ support for one or more specific CSS features. This is called a feature query. *
 
   .about-skills {
     margin: 0 1rem;
-
   }
 }
 
@@ -604,6 +632,5 @@ support for one or more specific CSS features. This is called a feature query. *
 
   .about-skills {
     margin: 0 1rem;
-
   }
 }
