@@ -179,42 +179,6 @@ button:focus,
   /* because of the cascading behavior of CSS, the sepecific changes here will overwrite those from the original styling */
 }
 
-/* .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 20px;
-  background-color: #fed7aa;
-} */
-
-/* .page-header_item {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
-  height: 70px;
-  -o-object-fit: contain;
-  object-fit: contain;
-} */
-
-/* .page-header_item:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  text-align: right;
-} */
-
-/* .navigation-list, */
-
-/* .navigation-lisst_item--active {
-  text-decoration: none;
-} */
-
-/* .navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
-} */
-
 .nav-list {
   text-transform: uppercase;
 }
@@ -280,8 +244,6 @@ Here above, i added the code to place the footer at the bottom of the page
 .contact-title {
   text-transform: uppercase;
 }
-
-
 
 .about-text {
   display: flex;
@@ -410,21 +372,6 @@ main {
   animation-timing-function: linear;
 }
 
-/* .sun {
-    animation: 4s color-change infinite alternate linear
-} 
-Also can be write down like this*/
-
-.cloud-front {
-  -webkit-animation: 30s cloud-move infinite alternate linear;
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 .section-project {
 margin: 2rem auto;
 }
@@ -457,54 +404,6 @@ margin: 2rem auto;
     fill: #f76414
   }
 
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px)
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px)
-  }
 }
 
 @supports (display: grid) {
@@ -551,14 +450,6 @@ margin: 2rem auto;
   .grid-icons {
     font-size: 30px;
   }
-
-  /* .grid_item:last-child {
-    -ms-grid-column: 3;
-    grid-column: 3 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  } */
 }
 
 /* The @supports CSS at-rule lets you specify declarations that depend on a browser's 
