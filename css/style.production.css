@@ -282,7 +282,7 @@ Here above, i added the code to place the footer at the bottom of the page
   padding: 1px;
 }
 
-.svg-section{
+.svg-section {
   max-width: 75%;
   margin: 0 auto;
 }
@@ -373,7 +373,7 @@ main {
 }
 
 .section-project {
-margin: 2rem auto;
+  margin: 2rem auto;
 }
 
 @-webkit-keyframes color-change {
@@ -524,5 +524,18 @@ support for one or more specific CSS features. This is called a feature query. *
 
   .about-skills {
     margin: 0 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+
+  .profile_text {
+    margin: 2rem auto;
+    text-align: center;
   }
 }
