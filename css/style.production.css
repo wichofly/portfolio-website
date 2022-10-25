@@ -486,6 +486,11 @@ support for one or more specific CSS features. This is called a feature query. *
 
   .about-skills {
     margin: 0 1rem;
+    margin-bottom: 10rem;
+  }
+
+  .section-project{
+    margin-bottom: 10rem;
   }
 }
 
@@ -529,6 +534,7 @@ support for one or more specific CSS features. This is called a feature query. *
 
   .about-skills {
     margin: 0 1rem;
+    margin-bottom: 10rem;
   }
 }
 
