@@ -426,7 +426,7 @@ main {
     grid-gap: 20px;
     /* This function does not work (grid-gap:) instead they recomend (gap property), but works... */
     margin: 2rem auto;
-    /* max-width: 1100px; */
+    max-width: 1250px;
   }
 
   .grid_item {
@@ -554,26 +554,28 @@ support for one or more specific CSS features. This is called a feature query. *
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1550px;
   }
 
-  /* .grid_item:nth-of-type(5) {
+   /* .grid_item:nth-of-type(5) {
     grid-column: 2/3;
   }
 
   .grid_item:nth-of-type(6) {
     grid-column: 3/4;
-  } */
+  }  */
 }
 
 @media (min-width: 1850px) {
   .grid {
     /* -ms-grid-columns: 1fr; */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1750px;
   }
 
   /* .grid_item:nth-of-type(6){
     grid-column: 2 / 3;
-  } */
+  }  */
 }
 
 @media (min-width: 2250px) {
@@ -590,5 +592,6 @@ support for one or more specific CSS features. This is called a feature query. *
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: none;
+    max-width: 2150px;
   }
 }
