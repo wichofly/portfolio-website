@@ -295,6 +295,7 @@ Here above, i added the code to place the footer at the bottom of the page
 
 .about-skills {
   text-align: center;
+  margin-bottom: 10rem;
 }
 
 .skill-items {
@@ -328,6 +329,10 @@ Here above, i added the code to place the footer at the bottom of the page
 }
 
 .page-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 2rem;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,7 +378,7 @@ main {
 }
 
 .section-project {
-  margin: 2rem auto;
+  margin: 2rem auto 10rem auto;
 }
 
 @-webkit-keyframes color-change {
