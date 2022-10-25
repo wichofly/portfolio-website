@@ -192,17 +192,15 @@ button:focus,
 }
 
 .profile {
-  max-width: 700px;
-  /* the max-width: 700px; declaration will keep this “box” from exceeding 700px. */
-  margin: 2rem auto;
-  /* your profile “box” is now centered on the page. This was thanks to the margin: 0 auto; */
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  display: flex;
+  width: 100%;
+  height: 70vh;
   align-items: center;
+  justify-content: center;
 }
 
 .profile_portrait {
-  float: left;
+  /* float: left; */
   width: 250px;
   height: 250px;
   margin-right: 40px;
@@ -323,9 +321,10 @@ Here above, i added the code to place the footer at the bottom of the page
 .contact-section {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  width: 100%;
+  height: 70vh;
   align-items: center;
-  margin: 2rem auto;
+  justify-content: center;
 }
 
 .page-footer {
@@ -489,7 +488,7 @@ support for one or more specific CSS features. This is called a feature query. *
     margin-bottom: 10rem;
   }
 
-  .section-project{
+  .section-project {
     margin-bottom: 10rem;
   }
 }
