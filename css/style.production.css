@@ -260,7 +260,7 @@ Here above, i added the code to place the footer at the bottom of the page
 }
 
 .about-box {
-  max-width: 850px;
+  max-width: 950px;
   display: flex;
   gap: 70px;
   margin: 2rem auto 1rem auto;
@@ -278,6 +278,10 @@ Here above, i added the code to place the footer at the bottom of the page
   list-style-type: none;
   /* It get rid of the dots */
   padding: 1px;
+}
+
+.hobbies-list li {
+  margin-top: 0.5rem;
 }
 
 .svg-section {
@@ -557,7 +561,7 @@ support for one or more specific CSS features. This is called a feature query. *
     max-width: 1550px;
   }
 
-   /* .grid_item:nth-of-type(5) {
+  /* .grid_item:nth-of-type(5) {
     grid-column: 2/3;
   }
 
