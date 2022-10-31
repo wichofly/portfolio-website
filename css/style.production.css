@@ -577,6 +577,44 @@ support for one or more specific CSS features. This is called a feature query. *
   .section-project {
     margin-bottom: 10rem;
   }
+
+  .study-case-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .intro-img {
+    width: 60%;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .approach-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .server-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .client-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .approach-img {
+    width: 20rem;
+    height: auto;
+    margin: 1rem;
+  }
 }
 
 @media all and (min-width: 550px) and (max-width: 950px) {
@@ -591,6 +629,44 @@ support for one or more specific CSS features. This is called a feature query. *
 
   .how-i-began {
     padding: 1rem;
+  }
+
+  .study-case-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .intro-img {
+    width: 60%;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .approach-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .server-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .client-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .approach-img {
+    width: 20rem;
+    height: auto;
+    margin: 1rem;
   }
 }
 
