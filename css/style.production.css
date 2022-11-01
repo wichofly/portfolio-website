@@ -504,6 +504,11 @@ main {
   text-decoration: underline;
 }
 
+.credits i {
+  font-size: 10px;
+  margin-right: 1rem;
+}
+
 .approach-section {
   display: flex;
   flex-direction: column;
@@ -524,6 +529,11 @@ main {
   text-decoration: underline;
 }
 
+.serverside-img {
+  display: flex;
+  align-items: center;
+}
+
 .client-side {
   display: flex;
   gap: 5rem;
@@ -535,7 +545,15 @@ main {
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
 }
 
+.challanges {
+  margin-bottom: 5rem;
+}
+
 .challange-heading {
+  text-decoration: underline;
+}
+
+.conclusion-heading {
   text-decoration: underline;
 }
 
